@@ -9,9 +9,10 @@ export function NavIcon({
   cur: string;
   setCur: Function;
 }) {
+  const isSelected = cur === name;
   return (
     <button
-      className={`${cur === name ? 'bg-accent-400' : ''} z-10 flex h-full min-w-20 flex-col items-center justify-center rounded-xl`}
+      className={`${isSelected ? 'bg-accent-400' : ''} h-23 z-10 flex w-20 flex-col items-center justify-center rounded-xl p-3`}
       onClick={(e) => setCur(name)}>
       <img src={icon} alt="" />
       <span className="font-body text-white">{name}</span>

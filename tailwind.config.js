@@ -86,7 +86,7 @@ export default {
       },
       fontWeight: {
         normal: '400',
-        bold: '700',
+        bold: '600',
       },
     },
   },
