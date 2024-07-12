@@ -70,7 +70,7 @@ function App() {
       app = <HomeTab resume={resume} />;
       break;
     case 'edit':
-      app = <EditTab />;
+      app = <EditTab resume={resume} setResume={setResume} />;
       break;
   }
 
