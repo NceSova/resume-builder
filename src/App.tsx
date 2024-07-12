@@ -12,7 +12,7 @@ function App() {
       lastname: 'Doberman',
       email: 'user@domen.com',
       phone: '+79998887766',
-      color: '#fbcfe8',
+      color: '#fb923c',
     },
     learn: [
       {
