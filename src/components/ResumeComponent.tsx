@@ -1,12 +1,21 @@
 import {Resume} from '../Resume';
 import {HeaderItem} from './HeaderItem';
 import {LearnItem} from './LearnItem';
+import {WorkItem} from './WorkItem';
 
 export function ResumeComponent({resume}: {resume: Resume}) {
   const headerColor = resume.info.color;
   let learnHeader = undefined;
   if (resume.learn) {
-    learnHeader = <h2 className="p-2 font-heading font-bold">Места учебы:</h2>;
+    learnHeader = (
+      <h2 className="p-2 font-heading font-semibold">Места учебы:</h2>
+    );
+  }
+  let workHeader = undefined;
+  if (resume.work) {
+    workHeader = (
+      <h2 className="p-2 font-heading font-semibold">Места работы:</h2>
+    );
   }
   return (
     <div className="h-full w-full">
@@ -28,7 +37,19 @@ export function ResumeComponent({resume}: {resume: Resume}) {
             country={item.country}></LearnItem>
         ))}
       </div>
-      <div></div>
+      <div>
+        {workHeader}
+        {resume.work.map((item) => (
+          <WorkItem
+            key={item.id}
+            title={item.title}
+            company={item.company}
+            startDate={item.startDate}
+            endDate={item.endDate}
+            description={item.description}
+          />
+        ))}
+      </div>
     </div>
   );
 }

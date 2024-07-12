@@ -1,5 +1,3 @@
-import {LearnPlace} from '../Resume';
-
 export function LearnItem({
   degree,
   university,

@@ -81,12 +81,12 @@ export default {
         '5xl': '4.210rem',
       },
       fontFamily: {
-        heading: 'Inter',
+        heading: 'Rubik',
         body: 'Rubik',
       },
       fontWeight: {
         normal: '400',
-        bold: '600',
+        bold: '500',
       },
     },
   },

@@ -15,8 +15,8 @@ export function HeaderItem({name, lastname, email, phone, color}: Info) {
     <div
       className="grid grid-cols-2 grid-rows-2 gap-1 p-2"
       style={{backgroundColor: color, color: fontColor}}>
-      <span className="font-heading">{name}</span>
-      <span className="row-start-2 font-heading">{lastname}</span>
+      <span className="font-heading text-xl">{name}</span>
+      <span className="row-start-2 font-heading text-xl">{lastname}</span>
       <span className="text-right font-body font-normal">{email}</span>
       <span className="text-right font-body font-normal">{phone}</span>
     </div>
