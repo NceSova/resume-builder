@@ -1,19 +1,9 @@
-import {ReactElement} from 'react';
-
-export function Button({
-  className,
-  children,
-  onClick,
-}: {
-  className: string;
-  children: string;
-  onClick: Function;
-}) {
+export function Button(props) {
   return (
     <button
-      className={'bg-primary rounded-md p-2 text-white' + className}
-      onClick={(e) => onClick(e)}>
-      {children}
+      className={'bg-primary rounded-xl p-2 text-white' + props.className}
+      onClick={props.onClick}>
+      {props.children}
     </button>
   );
 }
