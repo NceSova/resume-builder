@@ -1,5 +1,6 @@
 import {Resume} from '../Resume';
 import {HeaderEdit} from './HeaderEdit';
+import {LearnEdit} from './LearnEdit';
 
 export function EditTab({
   resume,
@@ -10,8 +11,8 @@ export function EditTab({
 }) {
   return (
     <div className="">
-      <h1>Edit</h1>
       <HeaderEdit resume={resume} setResume={setResume} />
+      <LearnEdit resume={resume} setResume={setResume} />
     </div>
   );
 }
