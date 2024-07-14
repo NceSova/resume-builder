@@ -18,7 +18,7 @@ export function LearnEdit({
     setResume(newResume);
   }
   return (
-    <div className="">
+    <div className="bg-background">
       <div className="flex flex-col gap-2 px-8 py-1">
         <input
           type="text"
@@ -53,6 +53,7 @@ export function LearnEdit({
           }}
         />
         <button
+          className="rounded-xl bg-primary p-2 text-white"
           onClick={(e) => {
             learnItem.id = uuidv4();
             updateResume();

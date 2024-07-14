@@ -6,13 +6,13 @@ import {WorkItem} from './WorkItem';
 export function ResumeComponent({resume}: {resume: Resume}) {
   const headerColor = resume.info.color;
   let learnHeader = undefined;
-  if (resume.learn) {
+  if (resume.learn.length != 0) {
     learnHeader = (
       <h2 className="p-2 font-heading font-semibold">Места учебы:</h2>
     );
   }
   let workHeader = undefined;
-  if (resume.work) {
+  if (resume.work.length != 0) {
     workHeader = (
       <h2 className="p-2 font-heading font-semibold">Места работы:</h2>
     );
