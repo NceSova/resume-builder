@@ -60,7 +60,7 @@ export function WorkEdit({
         />
         <button
           className="rounded-xl bg-primary p-2 text-white"
-          onClick={(e) => {
+          onClick={() => {
             workItem.id = uuidv4();
             updateResume();
           }}>

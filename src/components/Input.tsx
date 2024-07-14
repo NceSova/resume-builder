@@ -1,4 +1,4 @@
-export function Input(props) {
+export function Input(props: any) {
   return (
     <input
       type={props.type}
@@ -6,7 +6,7 @@ export function Input(props) {
       value={props.value}
       placeholder={props.placeholder}
       className={
-        'outline-accent bg-secondary text-text rounded-md p-3 font-body text-lg outline-2'
+        'rounded-md bg-secondary p-3 font-body text-lg text-text outline-2 outline-accent'
       }
     />
   );

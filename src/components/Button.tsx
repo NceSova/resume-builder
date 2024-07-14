@@ -1,7 +1,7 @@
-export function Button(props) {
+export function Button(props: any) {
   return (
     <button
-      className={'bg-primary rounded-xl p-2 text-white' + props.className}
+      className={'rounded-xl bg-primary p-2 text-white' + props.className}
       onClick={props.onClick}>
       {props.children}
     </button>

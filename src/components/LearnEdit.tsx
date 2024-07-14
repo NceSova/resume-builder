@@ -54,7 +54,7 @@ export function LearnEdit({
         />
         <button
           className="rounded-xl bg-primary p-2 text-white"
-          onClick={(e) => {
+          onClick={() => {
             learnItem.id = uuidv4();
             updateResume();
           }}>

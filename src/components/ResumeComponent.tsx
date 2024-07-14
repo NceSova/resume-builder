@@ -4,7 +4,6 @@ import {LearnItem} from './LearnItem';
 import {WorkItem} from './WorkItem';
 
 export function ResumeComponent({resume}: {resume: Resume}) {
-  const headerColor = resume.info.color;
   let learnHeader = undefined;
   if (resume.learn.length != 0) {
     learnHeader = (
