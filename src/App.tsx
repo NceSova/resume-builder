@@ -29,7 +29,7 @@ function App() {
   }
 
   return (
-    <div className="flex h-screen flex-col bg-background lg:flex-row">
+    <div className="flex min-h-screen flex-col bg-background lg:flex-row">
       <TopAppBar cur={curScreen} setCur={setCurScreen} />
       {app}
     </div>
